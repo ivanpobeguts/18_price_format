@@ -1,6 +1,33 @@
 # Price Formatter
 
-[TODO. There will be project description]
+The script get the price in input and format it.
+  
+# Usage from command line
+  
+Script requires python 3.5. Example on Linux (for Windows - the same):
+
+```bash
+$ python format_price.py 123987.0034
+
+Formated price: 123 987
+```
+
+# Usage in class
+
+```python
+from format_price import format_price
+
+price = 987256.98
+print(format_price(price))
+```
+
+# Tests
+
+You also can run tests:
+
+```bash
+$ python tests.py
+```
 
 # Project Goals
 
