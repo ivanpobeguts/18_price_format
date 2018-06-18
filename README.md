@@ -27,6 +27,12 @@ You also can run tests:
 
 ```bash
 $ python tests.py
+.............
+----------------------------------------------------------------------
+Ran 13 tests in 0.000s
+
+OK
+
 ```
 
 # Project Goals
