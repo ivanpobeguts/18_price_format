@@ -1,5 +1,3 @@
-import sys
-
 def format_price(price):
     if isinstance(price, bool):
         return None
