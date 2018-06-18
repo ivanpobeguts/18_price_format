@@ -9,7 +9,9 @@ def format_price(price):
     except (TypeError, ValueError):
         return None
     price = round(price, 2)
-    formatted_price = '{:,.2f}'.format(price).replace(',', ' ')
+    formatted_price = (
+        '{:,}'.format(price).replace(',', ' ').replace('.0', '')
+    )
     return formatted_price
 
 

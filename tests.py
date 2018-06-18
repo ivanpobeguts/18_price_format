@@ -5,11 +5,11 @@ from format_price import format_price
 class FormatPriceTest(unittest.TestCase):
     def test_int(self):
         price = 12345
-        self.assertEqual(format_price(price), '12 345.00')
+        self.assertEqual(format_price(price), '12 345')
 
     def test_float(self):
         price = 12345.0000
-        self.assertEqual(format_price(price), '12 345.00')
+        self.assertEqual(format_price(price), '12 345')
 
     def test_float_round(self):
         price = 12345.98
@@ -21,7 +21,7 @@ class FormatPriceTest(unittest.TestCase):
 
     def test_string(self):
         price = '12345'
-        self.assertEqual(format_price(price), '12 345.00')
+        self.assertEqual(format_price(price), '12 345')
 
     def test_nondidgit_string(self):
         price = '12345sdf'
@@ -37,15 +37,15 @@ class FormatPriceTest(unittest.TestCase):
 
     def test_zero(self):
         price = 0
-        self.assertEqual(format_price(price), '0.00')
+        self.assertEqual(format_price(price), '0')
 
     def test_negative_int(self):
         price = -100000
-        self.assertEqual(format_price(price), '-100 000.00')
+        self.assertEqual(format_price(price), '-100 000')
 
     def test_negative_float(self):
         price = -100000.00
-        self.assertEqual(format_price(price), '-100 000.00')
+        self.assertEqual(format_price(price), '-100 000')
 
     def test_boolean(self):
         price = True
