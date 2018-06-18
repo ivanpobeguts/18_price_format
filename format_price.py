@@ -1,9 +1,11 @@
+import sys
+
 def format_price(price):
     if isinstance(price, bool):
         return None
     try:
         price = float(price)
-    except:
+    except TypeError:
         return None
     price = round(price)
     formatted_price = '{:,}'.format(price).replace(',', ' ')
