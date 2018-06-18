@@ -1,4 +1,6 @@
 def format_price(price):
+    if isinstance(price, bool):
+        return None
     try:
         price = float(price)
     except:
@@ -9,4 +11,5 @@ def format_price(price):
 
 
 if __name__ == '__main__':
-    print(format_price('567839'))
+    price = [1, 2, 3]
+    print(format_price(price))
