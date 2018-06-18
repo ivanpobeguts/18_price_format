@@ -21,8 +21,8 @@ def get_parser():
 
 if __name__ == '__main__':
     price = get_parser().parse_args().price
-    formated_price = format_price(price)
-    if not formated_price:
+    formatted_price = format_price(price)
+    if not formatted_price:
         print('Incorrect value for price:', price)
     else:
-        print('Formated price:', formated_price)
+        print('Formated price:', formatted_price)
