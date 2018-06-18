@@ -9,7 +9,7 @@ Script requires python 3.5. Example on Linux (for Windows - the same):
 ```bash
 $ python format_price.py 123987.0034
 
-Formated price: 123 987.00
+Formated price: 123 987
 ```
 
 # Usage in class
